@@ -1,0 +1,51 @@
+.table-view {
+  margin: 20px;
+  
+  &__header {
+    margin-bottom: 1rem;
+    position: relative;
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    @media (max-width: 600px) {
+      button {
+        position: relative;
+      }
+    }
+  }
+
+  &__main {
+    .filter-bar {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* implementation specific table styles */
+    table {
+      width: 100%;
+
+      th:last-child:after {
+        content: '';
+      }
+
+      td:last-child {
+        color: $warning;
+
+        i {
+          cursor: pointer;
+        }
+      }
+    }
+
+    @media (max-width: 600px) {
+      table {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+  }
+}

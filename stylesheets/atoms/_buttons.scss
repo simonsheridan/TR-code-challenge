@@ -1,0 +1,58 @@
+button,
+html [type=button] {
+  appearance: button;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-primary {
+  background-color: $primary-blue;
+  color: #fff;
+}
+
+/* -- Dropdown - requires nesting in an <li> -- */
+li a.dropdown {
+  border-bottom: 1px solid $primary-blue;
+
+  + ul {
+    border: 1px solid $primary-blue;
+    display: none;
+    position: absolute; 
+    top: auto;
+
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 1rem;
+      display:list-item;
+      position: relative;
+    }
+  }
+}
+
+li a.dropdown:after{ 
+  content: '\f0d7';
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  margin:0px 0px 0px 10px;
+  text-decoration:none;
+}
+
+li:hover > a.dropdown + ul {
+  display:inherit;
+}
