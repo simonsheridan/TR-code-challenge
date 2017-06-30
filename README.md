@@ -3,6 +3,8 @@ The objective is to build a view that conforms to the spec provided by Talentree
 
 [spec image](./TableLayoutTest.png)
 
+The result, served from /public/index.html, can be seen [here](https://simonsheridan.github.io/TR-code-challenge/public)
+
 ## To run locally
 * Clone this repo
 * open /public/index.html in a browser
